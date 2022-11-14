@@ -47,10 +47,12 @@ main h2{
 
 .input i{
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     right: 1rem;
-    font-size: 1.5rem;
-    margin-top: .4rem;
+    font-size: 1.2rem;
     cursor: pointer;
+    opacity: .7;
 }
 
 .pass-strenght{
@@ -64,10 +66,24 @@ main h2{
 .pass-strenght::before{
     content: '';
     position: absolute;
-    background-color: #FFB703;
     height: 100%;
     width: 20%;
+    transition: 0.25s;
+}
 
+.pass-strenght#weak::before{
+    width: 20%;
+    background-color: #EF233C;
+}
+
+.pass-strenght#medium::before{
+    width: 50%;
+    background-color: #FFB703;
+}
+
+.pass-strenght#strong::before{
+    width: 100%;
+    background-color: #55A630;
 }
 
 .pass-lenght{
