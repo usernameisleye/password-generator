@@ -3,6 +3,8 @@ const sliderText = document.querySelector('.pass-lenght span')
 const generateBtn = document.querySelector('.generate')
 const options = document.querySelectorAll('.option input')
 
+const output = document.querySelector('.input input')
+
 const characters = {
     lowercase: 'abcdefghijklmnopqrstuvwxyz',
     uppercase: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
@@ -38,5 +40,7 @@ function Generate(){
     }
 
     console.log(randomPassword)
+    output.value = randomPassword;
 }
+
 
