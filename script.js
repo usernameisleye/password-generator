@@ -20,6 +20,7 @@ copyBtn.addEventListener('click', copyOutput)
 function updateSlider(){
     //update text value with slide input
     sliderText.innerHTML = sliderValue.value
+    Generate()
     updatePassStrenght()
 }
 updateSlider()
