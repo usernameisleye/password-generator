@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d39106e7f3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,7 +16,7 @@
         <section class="sub-container">
             <div class="input">
                 <input type="text" value="" disabled>
-                <i class="fa-regular fa-copy"></i>
+                <span><i class="fa-regular fa-copy"></i></span>
             </div>
 
             <div class="pass-strenght"></div>
@@ -24,21 +24,21 @@
             <div class="pass-lenght">
                 <div>
                     <label class="title">Password Lenght</label>
-                    <span>10</span>
+                    <span></span>
                 </div>
-                <input type="range" min="1" max="30" step="1">
+                <input type="range" min="0" max="30" step="1">
             </div>
 
             <div class="pass-settings">
                 <label for="" class="title">Password Settings</label>
                 <ul class="options">
                     <li class="option">
-                        <input type="checkbox" id="lowercase">
+                        <input type="checkbox" id="lowercase" checked>
                         <label for="lowercase">Lowercase (a-z)</label>
                     </li>
                     <li class="option">
                         <input type="checkbox" id="uppercase">
-                        <label for="uppercase">Uowercase (A-Z)</label>
+                        <label for="uppercase">Uppercase (A-Z)</label>
                     </li>
                     <li class="option">
                         <input type="checkbox" id="numbers">
@@ -58,7 +58,7 @@
                     </li>
                 </ul>
             </div>
-            <button class="generate">Generator Password</button>
+            <button class="generate">GENERATE PASSWORD</button>
         </section>
     </main>
 </body>
